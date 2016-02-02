@@ -1,0 +1,179 @@
+body
+{
+	background-color: #000000;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+
+#title
+{
+	color: #FFFFFF;
+	content: center;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin: 0%;
+
+	font-size: 40px;
+}
+
+#titleSmaller
+{
+	color: #007FFF;
+	content: center;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin: 1%;
+
+	font-size: 25px;
+
+}
+
+#mainBody
+{
+	color: #FFFFFF;
+	float: left;
+	width: 100%;
+	content: center;
+}
+
+#topImage
+{
+	float: left;
+	width: 98%;
+	margin: 1%;
+	text-align: center;
+}
+
+#bottomText
+{
+
+	float: left;
+	width: 90%;
+	margin-top: 2.5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	text-align: center;
+	padding-top:15px;
+	padding-bottom:15px;
+
+}
+
+
+#timeline
+{
+	float: left;
+	width: 90%;
+	margin-top: 2.5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.timelineEntry
+{
+	float: left;
+	width: 100%;
+}
+
+.timelineLeftSide
+{
+	float: left;
+	width: 48%;
+	padding: 1%;
+	text-align: center;
+}
+
+.timelineRightSide
+{
+	float: left;
+	width: 48%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-right: 2%;
+	text-align: left;
+}
+
+.reference
+{
+	float: left;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	padding-bottom: 1%;
+	padding-top: 1%;
+
+	text-align: center;
+}
+
+a:link {
+    color: Orange;
+}
+
+a:visited {
+    color: yellow;
+}
+
+#navBar
+{
+	float: left;
+	width: 100%;
+
+}
+
+#navBar ul li:hover > ul
+{
+	display: block;
+}
+
+#navBar ul
+{
+	background: #fdfdfd; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+/*
+	border-radius: 00px;  
+*/
+	list-style: none;
+	position: left;
+	display: inline-table;
+}
+
+#navBar ul:after
+{
+	content: ""; clear: both; display: block;
+}
+
+#navBar ul li
+{
+	float: left;
+}
+
+#navBar ul li:hover
+{
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+#navBar ul li:hover a
+{
+	color: #fff;
+}
+	
+#navBar ul li a
+{
+	display: block; padding: 15px 40px;
+	color: #000000; text-decoration: none;
+}

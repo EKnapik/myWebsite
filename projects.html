@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang= "en">
+
+<head>
+    <meta charset = "utf-8">
+    <title> Eric Knapik Projects </title>
+
+    <link rel="stylesheet" href="contentPage.css" >
+</head>
+
+<body>
+    <body>
+
+	<div id="navBar">
+	    <ul>
+	        <li><a href="index.html">Home Page</a></li>
+	        <li><a href="about.html">About</a></li>
+	        <li><a href="projects.html">Projects</a></li>
+	        <li><a href="tutorials.html">Tutorials</a></li>
+	        <li><a href="blog.html">Blog</a></li>
+	    </ul>
+    </div>
+
+	<div id="mainBody">
+		<div id="timeline">
+			<div class="timelineEntry">
+				<div class="timelineLeftSide">
+					<iframe width="450" height="300" frameborder="0"
+                    src="https://www.shadertoy.com/view/MlSXRz" allowfullscreen>
+                    </iframe>
+				</div>
+				<div class="timelineRightSide">
+					This was my first attempt at a ray tracer. I wanted to create a lighthouse 
+                    in the oceean. The water is a height mapped function using perlin noise to
+                     mimic trichoidal waves. The objects in the scene are distance functions which 
+                    are solved through ray marching the scene then the lighthouse spot light is a
+                    distance marched cone which is layered after the scene is drawn and mixed into
+                    the scene.
+                    <a href="https://github.com/EKnapik/Lighthouse_RayTracer/blob/master/lighthouse.glsl">The Code</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
