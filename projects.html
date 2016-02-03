@@ -24,22 +24,58 @@
 
 	<div id="mainBody">
 		<div id="timeline">
-			<div class="timelineEntry">
+        <!-------------------------------------------->
+            <div class="timelineEntry">
 				<div class="timelineLeftSide">
-					<iframe width="450" height="300" frameborder="0"
-                    src="https://www.shadertoy.com/view/MlSXRz" allowfullscreen>
-                    </iframe>
+                    <iframe width="500" height="300" frameborder="0"
+                    src="https://www.shadertoy.com/embed/lsG3WD?gui=true&t=10&paused=true&muted=false"
+                    allowfullscreen></iframe>
 				</div>
 				<div class="timelineRightSide">
+                    <h2>Basic Ray Tracer</h2>
+					Ray tracer modeled after Turner Whitted's 1980 paper. Displays the basics of
+                    global illumination and ray tracing. Topics: Primary rays, shadows, reflection,
+                     transmisson and procedural texture.
+                    <a href="https://www.shadertoy.com/view/lsG3WD">The live shader code</a>
+				</div>
+			</div>
+            <!-------------------->
+			<div class="timelineEntry">
+				<div class="timelineLeftSide">
+                   <iframe width="500" height="300" frameborder="0"
+                    src="https://www.shadertoy.com/embed/MlSXRz?gui=true&t=10&paused=true&muted=false"
+                    allowfullscreen></iframe> 
+				</div>
+				<div class="timelineRightSide">
+                    <h2>Lighthouse Ray Tracer</h2>
 					This was my first attempt at a ray tracer. I wanted to create a lighthouse 
                     in the oceean. The water is a height mapped function using perlin noise to
                      mimic trichoidal waves. The objects in the scene are distance functions which 
                     are solved through ray marching the scene then the lighthouse spot light is a
                     distance marched cone which is layered after the scene is drawn and mixed into
                     the scene.
-                    <a href="https://github.com/EKnapik/Lighthouse_RayTracer/blob/master/lighthouse.glsl">The Code</a>
+                    <a href="https://www.shadertoy.com/view/MlSXRz">The live shader code</a>
 				</div>
 			</div>
+            <!-------------------->
+            <div class="timelineEntry">
+				<div class="timelineLeftSide">
+                    <img src="stairwell.png" style="width:500px; height:300px">
+				</div>
+				<div class="timelineRightSide">
+                    <h2>Rasterized Stairwell</h2>
+					This was my introduction into computer graphics class' final project. The task
+                    was to try and recreate an image we found. I really did like the project and think
+                    that anyone trying to learn computer graphics should try some photo recreation. Some
+                    of the tasks involved were lighting, texture definition and passing, procedural object 
+                    creation, camera and perspective matricies. The project tested all the basicics of 
+                    computer graphics rendering and made the assignment enjoyable.
+                    <a href="https://github.com/EKnapik/stairwell_OpenGL">The code</a>
+				</div>
+			</div>
+            <!-------------------->
+
+        <!-------------------------------------------->
 		</div>
 	</div>
 </body>
