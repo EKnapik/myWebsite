@@ -37,17 +37,44 @@
 				</div>
 				<div class="timelineRightSide">
                     <h2>Step One by Eric Knapik</h2>
-<pre>
-The goal was to set up the scene as depicted in Turner Whitted's paper. 
-sphere reflective size: 0.65  sphere reflective position: Vec3(0.1, 1.0, -1.0)
-sphere transmissive size: 0.7 sphere transmissive position: Vec3(1.2, 1.4, 0.2)
-light position: Vec3(1.5, 5.0, 6.0)   Light color: R=1.0 G=0.9 B=0.7 scale is 0.0-1.0
-camera position: Vec3(1.0, 1.1, 2.0)  Focal length: 1.5
-camera look at point: Vec3(1.0, 1.1, -1.0)
-floor position: Vec3(0.0, 0.0, 0.0)
-floor size: infinate plane limited between -5 and 3 on x axis 
-</pre>
+					The goal was to set up the scene as depicted in Turner Whitted's paper. 
+					sphere reflective size: 0.65  sphere reflective position: Vec3(0.1, 1.0, -1.0)
+					sphere transmissive size: 0.7 sphere transmissive position: Vec3(1.2, 1.4, 0.2)
+					light position: Vec3(1.5, 5.0, 6.0)   Light color: R=1.0 G=0.9 B=0.7 scale is 0.0-1.0
+					camera position: Vec3(1.0, 1.1, 2.0)  Focal length: 1.5
+					camera look at point: Vec3(1.0, 1.1, -1.0)
+					floor position: Vec3(0.0, 0.0, 0.0)
+					floor size: infinate plane limited between -5 and 3 on x axis 
+
                     <a href="https://www.shadertoy.com/view/lsG3WD">The live shader code</a>
+				</div>
+			</div>
+            <!-------------------->
+            <div class="timelineEntry">
+				<div class="timelineLeftSide">
+                   <img src="checkpoint2.png" style="width:450px; height:253px">
+				</div>
+				<div class="timelineRightSide">
+                    <h2>Step Two</h2>
+					This rendering is done using GLSL as the backend for the ray tracer. The benefit here is that the
+					fragment shader will run per pixel in the given region so all I have to do is write the function to
+					color each pixel accordingly. The live shader code is using shader toy as backend for the fragment shader
+					what it is doing is drawing two triangles over the region you want then run the fragment shader for that
+					defined square. Alternatively if you were to do this not in the fragment shader you can define an array
+					of pixel values then send that over to the gpu to render that as a texture over any defined shape.
+					(rectangles are really good at simulating screens)
+				</div>
+			</div>
+            <!-------------------->
+            <div class="timelineEntry">
+				<div class="timelineLeftSide">
+                   <img src="checkpoint2Bonus.png" style="width:450px; height:253px">
+				</div>
+				<div class="timelineRightSide">
+                    <h2>Step Two Camera Movement Bonus</h2>
+					The camera has been moved off to the left and slightly forward while looking at the same position. In the
+					live shader code you could edit the camera position to be Vec3(cos(iGlobalTime), 1.1, sin(iGlobalTime)); to
+					see the camera move around a specific point.
 				</div>
 			</div>
             <!-------------------->
