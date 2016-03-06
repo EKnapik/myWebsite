@@ -78,6 +78,9 @@ body
 {
 	float: left;
 	width: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
 }
 
 .timelineLeftSide
@@ -170,14 +173,14 @@ a:visited {
 #navBar ul li:hover a
 {
 	color: #fff;
-	font-size: 2vw;
+	font-size: 1.2em;
 }
 	
 #navBar ul li a
 {
 	display: block; padding: 15px 40px;
 	color: #000000; text-decoration: none;
-	font-size: 2vw;
+	font-size: 1.2em;
 }
 
 @media(max-width: 900px) {
