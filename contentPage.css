@@ -4,6 +4,7 @@ body
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+	font-size: 1.3em;
 
 }
 
@@ -173,20 +174,26 @@ a:visited {
 #navBar ul li:hover a
 {
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 	
 #navBar ul li a
 {
 	display: block; padding: 15px 40px;
 	color: #000000; text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 @media(max-width: 900px) {
 	.container {
 		margin-left: .8em;
 		margin-right: .8em;
+	}
+	#navBar ul li a {
+		font-size: 2em;
+	}
+	#navBar ul li:hover a {
+		font-size: 2em;
 	}
 }
 @media(max-width: 480px) {
@@ -221,6 +228,12 @@ a:visited {
 		width: 50px;
 		height: 50px;
 		visibility: hidden;
-	}	
+	}
+	#navBar ul li a {
+		font-size: 2em;
+	}
+	#navBar ul li:hover a {
+		font-size: 2em;
+	}
 }
 
